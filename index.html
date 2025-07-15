@@ -302,25 +302,25 @@
     <div class="app-container">
         <!-- Espaço para a logo da empresa -->
         <!-- **** COLOQUE AQUI A URL DA SUA LOGO, SUBSTITUINDO 'SEU_NOME_DO_REPOSITORIO' **** -->
-        <img id="companyLogo" src="/SEU_NOME_DO_REPOSITORIO/logobranca.png" alt="Company Logo" class="company-logo">
+        <img id="companyLogo" src="/SEU_NOME_DO_REPOSITORIO/logobranca.png" alt="Logo da Empresa" class="company-logo">
 
         <div class="title-text">Transcritor de Áudio Completo</div>
 
         <p class="text-gray-400 text-sm mb-4">
-            Click the "Start Recording" button and begin speaking. The text will appear below in real-time.
-            This feature uses your browser's Speech Recognition API.
+            Clique no botão "Iniciar Gravação" e comece a falar. O texto aparecerá abaixo em tempo real.
+            Este recurso usa a API de Reconhecimento de Fala do seu navegador.
         </p>
 
-        <label for="languageSelect" class="field-label">Transcription Language:</label>
+        <label for="languageSelect" class="field-label">Idioma da Transcrição:</label>
         <select id="languageSelect" class="input-field mb-4">
-            <option value="pt-BR">Portuguese (Brazil)</option>
-            <option value="en-US">English (United States)</option>
-            <option value="es-ES">Spanish (Spain)</option>
-            <option value="fr-FR">French (France)</option>
-            <option value="de-DE">German (Germany)</option>
+            <option value="pt-BR">Português (Brasil)</option>
+            <option value="en-US">Inglês (Estados Unidos)</option>
+            <option value="es-ES">Espanhol (Espanha)</option>
+            <option value="fr-FR">Francês (França)</option>
+            <option value="de-DE">Alemão (Alemanha)</option>
         </select>
 
-        <button id="buttonToggleRecording" class="main-button">Start Recording</button>
+        <button id="buttonToggleRecording" class="main-button">Iniciar Gravação</button>
         <div id="statusMessage" class="status-message">
             <span id="recordingDot" class="recording-indicator" style="display: none;"></span>
             <span id="statusText"></span>
@@ -329,65 +329,65 @@
         <!-- New audio visualizer (Canvas) -->
         <canvas id="audioVisualizerCanvas"></canvas>
 
-        <label class="field-label mt-4">Partial Transcription:</label>
+        <label class="field-label mt-4">Transcrição Parcial:</label>
         <div id="partialTranscription" class="partial-transcription"></div>
 
-        <label class="field-label mt-4">Final Transcription:</label>
+        <label class="field-label mt-4">Transcrição Final:</label>
         <div id="finalTranscription" class="transcription-output"></div>
         <div id="wordCharCount" class="info-text text-right"></div>
 
         <!-- AI Buttons -->
-        <button id="buttonSummarizeTranscription" class="llm-feature-button mt-4" disabled>Summarize Transcription ✨</button>
+        <button id="buttonSummarizeTranscription" class="llm-feature-button mt-4" disabled>Resumir Transcrição ✨</button>
         <div id="summaryOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonTranslateTranscription" class="llm-feature-button mt-4" disabled>Translate to English ✨</button>
+        <button id="buttonTranslateTranscription" class="llm-feature-button mt-4" disabled>Traduzir para o Português (Brasil) ✨</button>
         <div id="translationOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractTopics" class="llm-feature-button mt-4" disabled>Extract Main Topics ✨</button>
+        <button id="buttonExtractTopics" class="llm-feature-button mt-4" disabled>Extrair Tópicos Principais ✨</button>
         <div id="topicsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonSentimentAnalysis" class="llm-feature-button mt-4" disabled>Sentiment Analysis ✨</button>
+        <button id="buttonSentimentAnalysis" class="llm-feature-button mt-4" disabled>Análise de Sentimento ✨</button>
         <div id="sentimentOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractActionItems" class="llm-feature-button mt-4" disabled>Extract Action Items ✨</button>
+        <button id="buttonExtractActionItems" class="llm-feature-button mt-4" disabled>Extrair Itens de Ação ✨</button>
         <div id="actionItemsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractKeywords" class="llm-feature-button mt-4" disabled>Extract Keywords ✨</button>
+        <button id="buttonExtractKeywords" class="llm-feature-button mt-4" disabled>Extrair Palavras-Chave ✨</button>
         <div id="keywordsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
         <!-- Export and Utility Buttons -->
-        <button id="buttonExportMeetingMinutes" class="export-button mt-4" disabled>Generate & Export Meeting Minutes (Word) 📄</button>
+        <button id="buttonExportMeetingMinutes" class="export-button mt-4" disabled>Gerar e Exportar Ata de Reunião (Word) 📄</button>
         <div id="meetingMinutesPreview" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExportTxt" class="export-button mt-4" disabled>Export Transcription (TXT) 📝</button>
+        <button id="buttonExportTxt" class="export-button mt-4" disabled>Exportar Transcrição (TXT) 📝</button>
 
-        <button id="buttonCopyTranscription" class="utility-button mt-4" disabled>Copy Final Transcription 📋</button>
+        <button id="buttonCopyTranscription" class="utility-button mt-4" disabled>Copiar Transcrição Final 📋</button>
 
-        <button id="buttonClearAILogic" class="utility-button mt-4">Clear AI Outputs ♻️</button>
-        <button id="buttonSaveSession" class="utility-button mt-4">Save Session 💾</button>
-        <button id="buttonLoadSession" class="utility-button mt-4">Load Last Session 📂</button>
-        <button id="buttonClearAll" class="utility-button mt-4">Clear All 🧹</button>
+        <button id="buttonClearAILogic" class="utility-button mt-4">Limpar Saídas de IA ♻️</button>
+        <button id="buttonSaveSession" class="utility-button mt-4">Salvar Sessão 💾</button>
+        <button id="buttonLoadSession" class="utility-button mt-4">Carregar Última Sessão 📂</button>
+        <button id="buttonClearAll" class="utility-button mt-4">Limpar Tudo 🧹</button>
     </div>
 
     <!-- Welcome Message -->
@@ -464,7 +464,7 @@
 
             // Check if the browser supports the Web Speech API
             if (!('webkitSpeechRecognition' in window)) {
-                statusText.textContent = 'Sorry, your browser does not support the Speech Recognition API.';
+                statusText.textContent = 'Desculpe, seu navegador não suporta a API de Reconhecimento de Fala.';
                 buttonToggleRecording.disabled = true;
                 return;
             }
@@ -522,7 +522,7 @@
                     draw();
                 } catch (err) {
                     console.error('Error accessing microphone for visualization:', err);
-                    statusText.textContent = 'Error accessing microphone for visualization. Check permissions.';
+                    statusText.textContent = 'Erro ao acessar o microfone para visualização. Verifique as permissões.';
                     audioVisualizerCanvas.style.display = 'none'; // Hide if error
                 }
             }
@@ -557,10 +557,10 @@
 
                 recognition.onstart = function() {
                     isRecording = true;
-                    buttonToggleRecording.textContent = 'Stop Recording';
+                    buttonToggleRecording.textContent = 'Parar Gravação';
                     buttonToggleRecording.classList.add('recording');
                     recordingDot.style.display = 'inline-block';
-                    statusText.textContent = 'Recording... Speak now.';
+                    statusText.textContent = 'Gravando... Fale agora.';
                     clearAllOutputs();
                     startAudioVisualizer(); // Start visualizer
                 };
@@ -583,10 +583,10 @@
 
                 recognition.onend = function() {
                     isRecording = false;
-                    buttonToggleRecording.textContent = 'Start Recording';
+                    buttonToggleRecording.textContent = 'Iniciar Gravação';
                     buttonToggleRecording.classList.remove('recording');
                     recordingDot.style.display = 'none';
-                    statusText.textContent = 'Recording Stopped.';
+                    statusText.textContent = 'Gravação Parada.';
                     partialTranscription.textContent = '';
                     stopAudioVisualizer(); // Stop visualizer
 
@@ -606,16 +606,16 @@
 
                 recognition.onerror = function(event) {
                     isRecording = false;
-                    buttonToggleRecording.textContent = 'Start Recording';
+                    buttonToggleRecording.textContent = 'Iniciar Gravação';
                     buttonToggleRecording.classList.remove('recording');
                     recordingDot.style.display = 'none';
                     console.error('Speech recognition error:', event.error);
                     if (event.error === 'not-allowed') {
-                        statusText.textContent = 'Microphone permission denied. Please allow microphone access in browser settings.';
+                        statusText.textContent = 'Permissão do microfone negada. Por favor, permita o acesso ao microfone nas configurações do navegador.';
                     } else if (event.error === 'no-speech') {
-                        statusText.textContent = 'No speech detected. Try again.';
+                        statusText.textContent = 'Nenhuma fala detectada. Tente novamente.';
                     } else {
-                        statusText.textContent = `Error: ${event.error}. Try again.`;
+                        statusText.textContent = `Erro: ${event.error}. Tente novamente.`;
                     }
                     // Disable AI and export buttons on error
                     buttonSummarizeTranscription.disabled = true;
@@ -643,7 +643,7 @@
                 }
                 initializeRecognition();
                 clearAllOutputs();
-                statusText.textContent = `Transcription language changed to ${languageSelect.options[languageSelect.selectedIndex].text}.`;
+                statusText.textContent = `Idioma da transcrição alterado para ${languageSelect.options[languageSelect.selectedIndex].text}.`;
             });
 
             // Function to call Gemini API for text processing
@@ -671,7 +671,7 @@
 
                     if (!response.ok) {
                         const errorData = await response.json();
-                        throw new Error(`API Error: ${response.status} - ${errorData.error.message || 'Unknown error'}`);
+                        throw new Error(`Erro da API: ${response.status} - ${errorData.error.message || 'Erro desconhecido'}`);
                     }
 
                     const result = await response.json();
@@ -687,11 +687,11 @@
                         }
 
                     } else {
-                        outputElement.querySelector('.llm-output-text').textContent = 'Could not generate a response. Please try again.';
+                        outputElement.querySelector('.llm-output-text').textContent = 'Não foi possível gerar uma resposta. Por favor, tente novamente.';
                     }
                 } catch (error) {
                     console.error('Error calling Gemini API:', error);
-                    outputElement.querySelector('.llm-output-text').textContent = `Error: ${error.message}. Check console for more details.`;
+                    outputElement.querySelector('.llm-output-text').textContent = `Erro: ${error.message}. Verifique o console para mais detalhes.`;
                 } finally {
                     loadingSpinner.style.display = 'none';
                 }
@@ -703,11 +703,11 @@
                 const topics = topicsOutput.querySelector('.llm-output-text').textContent.trim();
 
                 if (transcription === '') {
-                    alert('No final transcription available to generate meeting minutes.');
+                    alert('Nenhuma transcrição final disponível para gerar a ata da reunião.');
                     return;
                 }
                 if (topics === '') {
-                    alert('Please extract main topics before generating meeting minutes.');
+                    alert('Por favor, extraia os tópicos principais antes de gerar a ata da reunião.');
                     return;
                 }
 
@@ -728,7 +728,7 @@
                         <html>
                         <head>
                             <meta charset="utf-8">
-                            <title>Meeting Minutes</title>
+                            <title>Ata de Reunião</title>
                             <style>
                                 body { font-family: 'Times New Roman', Times, serif; margin: 1in; }
                                 h1 { text-align: center; font-size: 24pt; margin-bottom: 20pt; }
@@ -748,15 +748,15 @@
 
                     const a = document.createElement('a');
                     a.href = url;
-                    a.download = `Meeting_Minutes_${currentDate.replace(/\//g, '-')}_${currentTime.replace(/:/g, '-')}.doc`;
+                    a.download = `Ata_Reuniao_${currentDate.replace(/\//g, '-')}_${currentTime.replace(/:/g, '-')}.doc`;
                     document.body.appendChild(a);
                     a.click();
                     document.body.removeChild(a);
                     URL.revokeObjectURL(url);
 
-                    alert('Meeting minutes generated and download started!');
+                    alert('Ata de reunião gerada e download iniciado!');
                 } else {
-                    alert('Could not generate meeting minutes content.');
+                    alert('Não foi possível gerar o conteúdo da ata da reunião.');
                 }
             }
 
@@ -777,10 +777,10 @@
             function copyToClipboard(text) {
                 if (navigator.clipboard && navigator.clipboard.writeText) {
                     navigator.clipboard.writeText(text)
-                        .then(() => alert('Copied to clipboard!'))
+                        .then(() => alert('Copiado para a área de transferência!'))
                         .catch(err => {
-                            console.error('Error copying:', err);
-                            alert('Could not copy. Try manually.');
+                            console.error('Erro ao copiar:', err);
+                            alert('Não foi possível copiar. Tente manualmente.');
                         });
                 } else {
                     const textarea = document.createElement('textarea');
@@ -789,10 +789,10 @@
                     textarea.select();
                     try {
                         document.execCommand('copy');
-                        alert('Copied to clipboard!');
+                        alert('Copiado para a área de transferência!');
                     } catch (err) {
-                        console.error('Error copying (execCommand):', err);
-                        alert('Could not copy. Try manually.');
+                        console.error('Erro ao copiar (execCommand):', err);
+                        alert('Não foi possível copiar. Tente manualmente.');
                     }
                     document.body.removeChild(textarea);
                 }
@@ -803,7 +803,7 @@
                 const text = finalTranscription.textContent.trim();
                 const wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
                 const charCount = text.length;
-                wordCharCount.textContent = `Words: ${wordCount} | Characters: ${charCount}`;
+                wordCharCount.textContent = `Palavras: ${wordCount} | Caracteres: ${charCount}`;
             }
 
             // Function to clear only AI outputs
@@ -861,7 +861,7 @@
                     keywordsOutput: keywordsOutput.querySelector('.llm-output-text').textContent
                 };
                 localStorage.setItem('transcriptionSession', JSON.stringify(sessionData));
-                alert('Session saved successfully!');
+                alert('Sessão salva com sucesso!');
             }
 
             // Function to load session from localStorage
@@ -904,9 +904,9 @@
                         }
                     }
                     updateWordCharCount();
-                    alert('Session loaded successfully!');
+                    alert('Sessão carregada com sucesso!');
                 } else {
-                    alert('No saved session found.');
+                    alert('Nenhuma sessão salva encontrada.');
                 }
             }
 
@@ -915,7 +915,7 @@
                 if (isRecording) {
                     recognition.stop();
                 } else {
-                    statusText.textContent = 'Starting recording...';
+                    statusText.textContent = 'Iniciando gravação...';
                     recognition.start();
                 }
             });
@@ -923,43 +923,43 @@
             // Event listeners for AI buttons
             buttonSummarizeTranscription.addEventListener('click', function() {
                 const textToSummarize = finalTranscription.textContent.trim();
-                if (textToSummarize === '') { alert('No final transcription available to summarize.'); return; }
-                const prompt = `Summarize the following text concisely and clearly:\n\n${textToSummarize}`;
+                if (textToSummarize === '') { alert('Nenhuma transcrição final disponível para resumir.'); return; }
+                const prompt = `Resuma o seguinte texto de forma concisa e clara:\n\n${textToSummarize}`;
                 callGeminiApiForTextProcessing(prompt, summaryOutput, summaryOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonTranslateTranscription.addEventListener('click', function() {
                 const textToTranslate = finalTranscription.textContent.trim();
-                if (textToTranslate === '') { alert('No final transcription available to translate.'); return; }
-                const prompt = `Translate the following text from Portuguese to English:\n\n${textToTranslate}`;
+                if (textToTranslate === '') { alert('Nenhuma transcrição final disponível para traduzir.'); return; }
+                const prompt = `Traduza o seguinte texto para o português do Brasil:\n\n${textToTranslate}`;
                 callGeminiApiForTextProcessing(prompt, translationOutput, translationOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractTopics.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('No final transcription available to extract topics.'); return; }
-                const prompt = `Analyze the following text and list the 3 to 5 main topics or subjects covered, separated by bullet points:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair tópicos.'); return; }
+                const prompt = `Analise o seguinte texto e liste de 3 a 5 tópicos ou assuntos principais abordados, separados por marcadores:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, topicsOutput, topicsOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonSentimentAnalysis.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('No final transcription available for sentiment analysis.'); return; }
-                const prompt = `Analyze the overall sentiment of the following text and classify it as Positive, Negative, or Neutral. Briefly explain why:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para análise de sentimento.'); return; }
+                const prompt = `Analise o sentimento geral do seguinte texto e classifique-o como Positivo, Negativo ou Neutro. Explique brevemente o porquê:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, sentimentOutput, sentimentOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractActionItems.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('No final transcription available to extract action items.'); return; }
-                const prompt = `From the following text, extract all action items, tasks, or next steps that were mentioned. List them with bullet points:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair itens de ação.'); return; }
+                const prompt = `Do texto a seguir, extraia todos os itens de ação, tarefas ou próximos passos que foram mencionados. Liste-os com marcadores:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, actionItemsOutput, actionItemsOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractKeywords.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('No final transcription available to extract keywords.'); return; }
-                const prompt = `List the 5 to 10 most relevant keywords or phrases from the following text:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair palavras-chave.'); return; }
+                const prompt = `Liste as 5 a 10 palavras-chave ou frases mais relevantes do texto a seguir:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, keywordsOutput, keywordsOutput.querySelector('.llm-loading-spinner'));
             });
 
@@ -969,16 +969,16 @@
             // Event listener for Export Transcription (TXT) button
             buttonExportTxt.addEventListener('click', function() {
                 const textToExport = finalTranscription.textContent.trim();
-                if (textToExport === '') { alert('No final transcription to export.'); return; }
-                const filename = `transcription_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.txt`;
+                if (textToExport === '') { alert('Nenhuma transcrição final para exportar.'); return; }
+                const filename = `transcricao_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.txt`;
                 exportTextToTxt(filename, textToExport);
-                alert('Transcription exported as TXT!');
+                alert('Transcrição exportada como TXT!');
             });
 
             // Event listener for Copy Final Transcription button
             buttonCopyTranscription.addEventListener('click', function() {
                 const textToCopy = finalTranscription.textContent.trim();
-                if (textToCopy === '') { alert('No final transcription to copy.'); return; }
+                if (textToCopy === '') { alert('Nenhuma transcrição final para copiar.'); return; }
                 copyToClipboard(textToCopy);
             });
 
