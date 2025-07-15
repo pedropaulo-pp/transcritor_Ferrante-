@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0A192F; /* Fundo azul marinho profundo */
+            background-color: #0A192F; /* Deep navy blue background */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,31 +21,31 @@
         .app-container {
             width: 100%;
             max-width: 600px;
-            background-color: #172A45; /* Fundo do container azul marinho ligeiramente mais claro */
-            border-radius: 24px; /* Cantos mais arredondados */
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Sombra mais intensa */
-            padding: 32px; /* Mais padding */
+            background-color: #172A45; /* Slightly lighter navy blue container background */
+            border-radius: 24px; /* More rounded corners */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* More intense shadow */
+            padding: 32px; /* More padding */
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            gap: 20px; /* Mais espaçamento */
-            border: 1px solid rgba(255, 255, 255, 0.05); /* Borda sutil */
+            gap: 20px; /* More spacing */
+            border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle border */
         }
-        /* Estilo para a logo */
+        /* Style for the logo */
         .company-logo {
-            max-width: 180px; /* Tamanho máximo da logo */
+            max-width: 180px; /* Max width of the logo */
             height: auto;
-            margin: 0 auto 20px auto; /* Centraliza e adiciona margem inferior */
-            display: block; /* Garante que a margem auto funcione */
-            border-radius: 8px; /* Cantos arredondados para a logo */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra sutil para a logo */
+            margin: 0 auto 20px auto; /* Center and add bottom margin */
+            display: block; /* Ensures auto margin works */
+            border-radius: 8px; /* Rounded corners for the logo */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for the logo */
         }
         .main-button {
-            background-color: #007BFF; /* Azul vibrante para o botão principal */
+            background-color: #007BFF; /* Vibrant blue for main button */
             color: #ffffff;
             font-weight: bold;
             padding: 14px;
-            border-radius: 30px; /* Botões arredondados */
+            border-radius: 30px; /* Rounded buttons */
             border: none;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -57,7 +57,7 @@
             letter-spacing: 0.5px;
         }
         .main-button:hover {
-            background-color: #0069d9; /* Azul mais escuro no hover */
+            background-color: #0069d9; /* Darker blue on hover */
             transform: translateY(-3px);
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
         }
@@ -67,7 +67,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         .main-button.recording {
-            background-color: #DC3545; /* Vermelho para gravar (alto contraste) */
+            background-color: #DC3545; /* Red for recording (high contrast) */
         }
         .main-button.recording:hover {
             background-color: #c82333;
@@ -76,7 +76,7 @@
             background-color: #bd2130;
         }
         .llm-feature-button {
-            background-color: #1E90FF; /* Azul mais claro para recursos de IA */
+            background-color: #1E90FF; /* Lighter blue for AI features */
             color: #ffffff;
             font-weight: bold;
             padding: 12px;
@@ -101,14 +101,14 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
         .llm-feature-button:disabled {
-            background-color: #6C7A89; /* Azul acinzentado para desabilitado */
+            background-color: #6C7A89; /* Grayish blue for disabled */
             color: #A7B9CC;
             cursor: not-allowed;
             box-shadow: none;
             transform: none;
         }
         .export-button {
-            background-color: #00BCD4; /* Ciano/Teal para botões de exportação */
+            background-color: #00BCD4; /* Cyan/Teal for export buttons */
             color: #ffffff;
             font-weight: bold;
             padding: 12px;
@@ -140,7 +140,7 @@
             transform: none;
         }
         .utility-button {
-            background-color: #4A6D8E; /* Azul acinzentado mais escuro para utilitários */
+            background-color: #4A6D8E; /* Darker grayish blue for utility */
             color: #ffffff;
             font-weight: bold;
             padding: 12px;
@@ -165,11 +165,11 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
         }
         .transcription-output, .partial-transcription, .llm-feature-output, .input-field {
-            background-color: #213B5C; /* Fundo azul escuro para campos de texto */
-            border: 1px solid #4A6D8E; /* Borda azul acinzentada sutil */
+            background-color: #213B5C; /* Dark blue background for text fields */
+            border: 1px solid #4A6D8E; /* Subtle grayish blue border */
             border-radius: 12px;
             padding: 16px;
-            color: #E0E6F0; /* Texto azul claro */
+            color: #E0E6F0; /* Light blue text */
             font-size: 16px;
             white-space: pre-wrap;
             min-height: 80px;
@@ -180,10 +180,10 @@
             min-height: 40px;
             font-size: 14px;
             font-style: italic;
-            color: #A7B9CC; /* Azul acinzentado para texto parcial */
+            color: #A7B9CC; /* Grayish blue for partial text */
         }
         .llm-feature-output {
-            background-color: #2A4B70; /* Fundo ligeiramente mais claro para saídas de IA */
+            background-color: #2A4B70; /* Slightly lighter background for AI outputs */
             display: none;
             position: relative;
         }
@@ -199,7 +199,7 @@
             height: 18px;
             border: 3px solid rgba(255,255,255,.3);
             border-radius: 50%;
-            border-top-color: #1E90FF; /* Azul para o spinner */
+            border-top-color: #1E90FF; /* Blue for spinner */
             animation: spin 1s ease-in-out infinite;
             -webkit-animation: spin 1s ease-in-out infinite;
             margin-left: 10px;
@@ -213,158 +213,186 @@
         .title-text {
             font-size: 32px;
             font-weight: bold;
-            color: #FFFFFF; /* Título branco puro */
+            color: #FFFFFF; /* Pure white title */
             text-align: center;
             margin-bottom: 28px;
-            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Brilho azul sutil */
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.6); /* Subtle blue glow */
         }
         .status-message {
             text-align: center;
-            color: #E0E6F0; /* Texto de status azul claro */
+            color: #E0E6F0; /* Light blue status text */
             font-weight: bold;
             margin-top: 10px;
         }
         .field-label {
             font-size: 16px;
-            color: #E0E6F0; /* Labels azul claro */
+            color: #E0E6F0; /* Light blue labels */
             margin-bottom: 6px;
             font-weight: 600;
         }
         .info-text {
             font-size: 14px;
-            color: #A7B9CC; /* Texto informativo azul acinzentado */
+            color: #A7B9CC; /* Grayish blue info text */
             margin-top: 6px;
         }
         .recording-indicator {
             display: inline-block;
             width: 12px;
             height: 12px;
-            background-color: #00FFFF; /* Ciano vibrante para o ponto de gravação */
+            background-color: #00FFFF; /* Vibrant cyan for recording dot */
             border-radius: 50%;
             animation: pulse 1.5s infinite;
             margin-left: 10px;
             vertical-align: middle;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Brilho ciano intenso */
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Intense cyan glow */
         }
         @keyframes pulse {
             0% { transform: scale(0.8); opacity: 0.6; box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
             50% { transform: scale(1.1); opacity: 1; box-shadow: 0 0 20px rgba(0, 255, 255, 1); }
             100% { transform: scale(0.8); opacity: 0.6; box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
         }
-        /* Estilo para o select */
+        /* Style for the select input */
         .input-field {
             padding: 12px;
             border-radius: 12px;
             border: 1px solid #4A6D8E;
-            background-color: #213B5C; /* Fundo azul escuro */
+            background-color: #213B5C; /* Dark blue background */
             min-height: 48px;
             font-size: 16px;
-            color: #E0E6F0; /* Texto azul claro */
+            color: #E0E6F0; /* Light blue text */
             width: 100%;
             box-sizing: border-box;
             box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
         }
-        /* Estilo para o canvas visualizador */
+        /* Style for the audio visualizer canvas */
         #audioVisualizerCanvas {
             width: 100%;
             height: 90px;
-            background-color: #172A45; /* Fundo do visualizador (mesmo do container) */
+            background-color: #172A45; /* Visualizer background (same as container) */
             border-radius: 12px;
             margin-top: 15px;
             margin-bottom: 25px;
             display: none;
             box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
         }
+        /* Welcome message styles */
+        .welcome-message {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF; /* Blue background */
+            color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0; /* Starts hidden */
+            transform: translateY(20px); /* Starts slightly below */
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+            z-index: 1000; /* Ensure it's on top */
+        }
+        .welcome-message.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body>
     <div class="app-container">
         <!-- Espaço para a logo da empresa -->
-      <img id="companyLogo" src="./logobranca.png" alt="Logo da Empresa" class="company-logo">
+        <!-- **** COLOQUE AQUI A URL DA SUA LOGO, SUBSTITUINDO 'SEU_NOME_DO_REPOSITORIO' **** -->
+        <img id="companyLogo" src="/SEU_NOME_DO_REPOSITORIO/logobranca.png" alt="Company Logo" class="company-logo">
+
         <div class="title-text">Transcritor de Áudio Completo</div>
 
         <p class="text-gray-400 text-sm mb-4">
-            Clique no botão "Iniciar Gravação" e comece a falar. O texto aparecerá abaixo em tempo real.
-            Este recurso utiliza a API de Reconhecimento de Fala do seu navegador.
+            Click the "Start Recording" button and begin speaking. The text will appear below in real-time.
+            This feature uses your browser's Speech Recognition API.
         </p>
 
-        <label for="languageSelect" class="field-label">Idioma da Transcrição:</label>
+        <label for="languageSelect" class="field-label">Transcription Language:</label>
         <select id="languageSelect" class="input-field mb-4">
-            <option value="pt-BR">Português (Brasil)</option>
-            <option value="en-US">Inglês (Estados Unidos)</option>
-            <option value="es-ES">Espanhol (Espanha)</option>
-            <option value="fr-FR">Francês (França)</option>
-            <option value="de-DE">Alemão (Alemanha)</option>
+            <option value="pt-BR">Portuguese (Brazil)</option>
+            <option value="en-US">English (United States)</option>
+            <option value="es-ES">Spanish (Spain)</option>
+            <option value="fr-FR">French (France)</option>
+            <option value="de-DE">German (Germany)</option>
         </select>
 
-        <button id="buttonToggleRecording" class="main-button">Iniciar Gravação</button>
+        <button id="buttonToggleRecording" class="main-button">Start Recording</button>
         <div id="statusMessage" class="status-message">
             <span id="recordingDot" class="recording-indicator" style="display: none;"></span>
             <span id="statusText"></span>
         </div>
 
-        <!-- Novo visualizador de áudio (Canvas) -->
+        <!-- New audio visualizer (Canvas) -->
         <canvas id="audioVisualizerCanvas"></canvas>
 
-        <label class="field-label mt-4">Transcrição Parcial:</label>
+        <label class="field-label mt-4">Partial Transcription:</label>
         <div id="partialTranscription" class="partial-transcription"></div>
 
-        <label class="field-label mt-4">Transcrição Final:</label>
+        <label class="field-label mt-4">Final Transcription:</label>
         <div id="finalTranscription" class="transcription-output"></div>
         <div id="wordCharCount" class="info-text text-right"></div>
 
-        <!-- Botões de IA -->
-        <button id="buttonSummarizeTranscription" class="llm-feature-button mt-4" disabled>Resumir Transcrição ✨</button>
+        <!-- AI Buttons -->
+        <button id="buttonSummarizeTranscription" class="llm-feature-button mt-4" disabled>Summarize Transcription ✨</button>
         <div id="summaryOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonTranslateTranscription" class="llm-feature-button mt-4" disabled>Traduzir para Inglês ✨</button>
+        <button id="buttonTranslateTranscription" class="llm-feature-button mt-4" disabled>Translate to English ✨</button>
         <div id="translationOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractTopics" class="llm-feature-button mt-4" disabled>Extrair Tópicos Principais ✨</button>
+        <button id="buttonExtractTopics" class="llm-feature-button mt-4" disabled>Extract Main Topics ✨</button>
         <div id="topicsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonSentimentAnalysis" class="llm-feature-button mt-4" disabled>Análise de Sentimento ✨</button>
+        <button id="buttonSentimentAnalysis" class="llm-feature-button mt-4" disabled>Sentiment Analysis ✨</button>
         <div id="sentimentOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractActionItems" class="llm-feature-button mt-4" disabled>Extrair Itens de Ação ✨</button>
+        <button id="buttonExtractActionItems" class="llm-feature-button mt-4" disabled>Extract Action Items ✨</button>
         <div id="actionItemsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExtractKeywords" class="llm-feature-button mt-4" disabled>Extrair Palavras-Chave ✨</button>
+        <button id="buttonExtractKeywords" class="llm-feature-button mt-4" disabled>Extract Keywords ✨</button>
         <div id="keywordsOutput" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <!-- Botões de Exportação e Utilidade -->
-        <button id="buttonExportMeetingMinutes" class="export-button mt-4" disabled>Gerar e Exportar Ata de Reunião (Word) 📄</button>
+        <!-- Export and Utility Buttons -->
+        <button id="buttonExportMeetingMinutes" class="export-button mt-4" disabled>Generate & Export Meeting Minutes (Word) 📄</button>
         <div id="meetingMinutesPreview" class="llm-feature-output">
             <span class="llm-loading-spinner" style="display: none;"></span>
             <span class="llm-output-text"></span>
         </div>
 
-        <button id="buttonExportTxt" class="export-button mt-4" disabled>Exportar Transcrição (TXT) 📝</button>
+        <button id="buttonExportTxt" class="export-button mt-4" disabled>Export Transcription (TXT) 📝</button>
 
-        <button id="buttonCopyTranscription" class="utility-button mt-4" disabled>Copiar Transcrição Final 📋</button>
+        <button id="buttonCopyTranscription" class="utility-button mt-4" disabled>Copy Final Transcription 📋</button>
 
-        <button id="buttonClearAILogic" class="utility-button mt-4">Limpar Saídas de IA ♻️</button>
-        <button id="buttonSaveSession" class="utility-button mt-4">Salvar Sessão 💾</button>
-        <button id="buttonLoadSession" class="utility-button mt-4">Carregar Última Sessão 📂</button>
-        <button id="buttonClearAll" class="utility-button mt-4">Limpar Tudo 🧹</button>
+        <button id="buttonClearAILogic" class="utility-button mt-4">Clear AI Outputs ♻️</button>
+        <button id="buttonSaveSession" class="utility-button mt-4">Save Session 💾</button>
+        <button id="buttonLoadSession" class="utility-button mt-4">Load Last Session 📂</button>
+        <button id="buttonClearAll" class="utility-button mt-4">Clear All 🧹</button>
+    </div>
+
+    <!-- Welcome Message -->
+    <div id="welcomeMessage" class="welcome-message">
+        Bem-vindo, Leandro!
     </div>
 
     <script>
@@ -377,11 +405,11 @@
             const finalTranscription = document.getElementById('finalTranscription');
             const wordCharCount = document.getElementById('wordCharCount');
 
-            // Novos elementos para o visualizador de áudio (Canvas)
+            // New elements for the audio visualizer (Canvas)
             const audioVisualizerCanvas = document.getElementById('audioVisualizerCanvas');
-            const canvasCtx = audioVisualizerCanvas.getContext('2d'); // Contexto 2D do canvas
+            const canvasCtx = audioVisualizerCanvas.getContext('2d'); // 2D context of the canvas
 
-            // Elementos para os recursos de IA
+            // Elements for AI features
             const buttonSummarizeTranscription = document.getElementById('buttonSummarizeTranscription');
             const summaryOutput = document.getElementById('summaryOutput');
             const buttonTranslateTranscription = document.getElementById('buttonTranslateTranscription');
@@ -395,7 +423,7 @@
             const buttonExtractKeywords = document.getElementById('buttonExtractKeywords');
             const keywordsOutput = document.getElementById('keywordsOutput');
 
-            // Elementos para exportação e utilidade
+            // Elements for export and utility
             const buttonExportMeetingMinutes = document.getElementById('buttonExportMeetingMinutes');
             const meetingMinutesPreview = document.getElementById('meetingMinutesPreview');
             const buttonExportTxt = document.getElementById('buttonExportTxt');
@@ -410,78 +438,96 @@
             let recognition;
             let isRecording = false;
 
-            // Variáveis para o visualizador de áudio
+            // Variables for the audio visualizer
             let audioContext;
             let analyser;
             let microphoneStream;
             let animationFrameId;
 
-            // Verifica se o navegador suporta a Web Speech API
+            // Welcome message element
+            const welcomeMessage = document.getElementById('welcomeMessage');
+
+            // Display welcome message on load
+            setTimeout(() => {
+                welcomeMessage.classList.add('show');
+            }, 500); // Show after 0.5 seconds
+
+            // Hide welcome message after some time
+            setTimeout(() => {
+                welcomeMessage.classList.remove('show');
+                // Optional: remove element from DOM after transition
+                setTimeout(() => {
+                    welcomeMessage.remove();
+                }, 1000); // Wait for transition to finish
+            }, 4000); // Hide after 4 seconds (total 4.5s including initial delay)
+
+
+            // Check if the browser supports the Web Speech API
             if (!('webkitSpeechRecognition' in window)) {
-                statusText.textContent = 'Desculpe, seu navegador não suporta a API de Reconhecimento de Fala.';
+                statusText.textContent = 'Sorry, your browser does not support the Speech Recognition API.';
                 buttonToggleRecording.disabled = true;
                 return;
             }
 
-            // Função para iniciar o visualizador de áudio
+            // Function to start the audio visualizer
             async function startAudioVisualizer() {
                 try {
-                    // Solicita acesso ao microfone
+                    // Request microphone access
                     microphoneStream = await navigator.mediaDevices.getUserMedia({ audio: true });
                     audioContext = new (window.AudioContext || window.webkitAudioContext)();
                     const source = audioContext.createMediaStreamSource(microphoneStream);
                     analyser = audioContext.createAnalyser();
-                    analyser.fftSize = 256; // Tamanho do FFT para análise de frequência (número de barras)
-                    const bufferLength = analyser.frequencyBinCount; // Metade do fftSize
-                    const dataArray = new Uint8Array(bufferLength); // Array para armazenar os dados de frequência
+                    analyser.fftSize = 256; // FFT size for frequency analysis (number of bars)
+                    const bufferLength = analyser.frequencyBinCount; // Half of fftSize
+                    const dataArray = new Uint8Array(bufferLength); // Array to store frequency data
 
                     source.connect(analyser);
 
-                    audioVisualizerCanvas.style.display = 'block'; // Mostra o canvas
-                    audioVisualizerCanvas.width = audioVisualizerCanvas.offsetWidth; // Define a largura real do canvas
-                    audioVisualizerCanvas.height = audioVisualizerCanvas.offsetHeight; // Define a altura real do canvas
+                    audioVisualizerCanvas.style.display = 'block'; // Show the canvas
+                    audioVisualizerCanvas.width = audioVisualizerCanvas.offsetWidth; // Set actual canvas width
+                    audioVisualizerCanvas.height = audioVisualizerCanvas.offsetHeight; // Set actual canvas height
 
-                    const barWidth = (audioVisualizerCanvas.width / bufferLength) * 2.5; // Largura de cada barra
+                    const barWidth = (audioVisualizerCanvas.width / bufferLength) * 2.5; // Width of each bar
                     let x = 0;
 
                     function draw() {
                         animationFrameId = requestAnimationFrame(draw);
 
-                        analyser.getByteFrequencyData(dataArray); // Obtém os dados de frequência
+                        analyser.getByteFrequencyData(dataArray); // Get frequency data
 
-                        canvasCtx.clearRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Limpa o canvas
-                        canvasCtx.fillStyle = '#172A45'; /* Fundo do visualizador (mesmo do container) */
-                        canvasCtx.fillRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Desenha o fundo
+                        canvasCtx.clearRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Clear the canvas
+                        canvasCtx.fillStyle = '#172A45'; /* Visualizer background (same as container) */
+                        canvasCtx.fillRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Draw the background
 
                         x = 0;
                         for (let i = 0; i < bufferLength; i++) {
-                            let barHeight = dataArray[i]; // A altura da barra é o valor da frequência
+                            let barHeight = dataArray[i]; // Bar height is the frequency value
 
-                            // Gradiente de azul escuro para azul claro/ciana, com um brilho sutil
+                            // Gradient of dark blue to light blue/cyan, with a subtle glow
                             let gradient = canvasCtx.createLinearGradient(0, audioVisualizerCanvas.height, 0, audioVisualizerCanvas.height - barHeight);
-                            gradient.addColorStop(0, '#007BFF'); // Azul vibrante na base
-                            gradient.addColorStop(0.5, '#1E90FF'); // Azul médio
-                            gradient.addColorStop(1, '#00FFFF'); // Ciano vibrante no topo (para o brilho)
+                            gradient.addColorStop(0, '#007BFF'); // Vibrant blue at the base
+                            gradient.addColorStop(0.5, '#1E90FF'); // Medium blue
+                            gradient.addColorStop(1, '#00FFFF'); // Vibrant cyan at the top (for glow)
                             canvasCtx.fillStyle = gradient;
 
-                            // Desenha a barra (x, y, largura, altura)
-                            // Adiciona um pequeno arredondamento no topo das barras
+                            // Draw the bar (x, y, width, height)
+                            // Add slight rounding to the top of the bars
                             canvasCtx.beginPath();
-                            canvasCtx.roundRect(x, audioVisualizerCanvas.height - barHeight, barWidth, barHeight, 3); /* Cantos arredondados */
+                            canvasCtx.roundRect(x, audioVisualizerCanvas.height - barHeight, barWidth, barHeight, 3); /* Rounded corners */
                             canvasCtx.fill();
 
-                            x += barWidth + 1; // Espaço entre as barras
+                            x += barWidth + 1; // Space between bars
                         }
                     }
                     draw();
                 } catch (err) {
-                    console.error('Erro ao acessar o microfone para visualização:', err);
-                    statusText.textContent = 'Erro ao acessar o microfone para visualização. Verifique as permissões.';
-                    audioVisualizerCanvas.style.display = 'none'; // Oculta se houver erro
+                    console.error('Error accessing microphone for visualization:', err);
+                    statusText.textContent = 'Error accessing microphone for visualization. Check permissions.';
+                    audioVisualizerCanvas.style.display = 'none'; // Hide if error
                 }
             }
 
-            // Função para parar o visualizador de áudio
+            // Function to stop the audio visualizer
             function stopAudioVisualizer() {
                 if (animationFrameId) {
                     cancelAnimationFrame(animationFrameId);
@@ -492,11 +538,11 @@
                 if (audioContext && audioContext.state !== 'closed') {
                     audioContext.close();
                 }
-                audioVisualizerCanvas.style.display = 'none'; // Oculta o visualizador
-                canvasCtx.clearRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Limpa o canvas
+                audioVisualizerCanvas.style.display = 'none'; // Hide visualizer
+                canvasCtx.clearRect(0, 0, audioVisualizerCanvas.width, audioVisualizerCanvas.height); // Clear canvas
             }
 
-            // Função para inicializar/reinicializar o SpeechRecognition com o idioma selecionado
+            // Function to initialize/reinitialize SpeechRecognition with the selected language
             function initializeRecognition() {
                 if (recognition) {
                     recognition.onstart = null;
@@ -511,12 +557,12 @@
 
                 recognition.onstart = function() {
                     isRecording = true;
-                    buttonToggleRecording.textContent = 'Parar Gravação';
+                    buttonToggleRecording.textContent = 'Stop Recording';
                     buttonToggleRecording.classList.add('recording');
                     recordingDot.style.display = 'inline-block';
-                    statusText.textContent = 'Gravando... Fale agora.';
+                    statusText.textContent = 'Recording... Speak now.';
                     clearAllOutputs();
-                    startAudioVisualizer(); // Inicia o visualizador
+                    startAudioVisualizer(); // Start visualizer
                 };
 
                 recognition.onresult = function(event) {
@@ -537,12 +583,12 @@
 
                 recognition.onend = function() {
                     isRecording = false;
-                    buttonToggleRecording.textContent = 'Iniciar Gravação';
+                    buttonToggleRecording.textContent = 'Start Recording';
                     buttonToggleRecording.classList.remove('recording');
                     recordingDot.style.display = 'none';
-                    statusText.textContent = 'Gravação Parada.';
+                    statusText.textContent = 'Recording Stopped.';
                     partialTranscription.textContent = '';
-                    stopAudioVisualizer(); // Para o visualizador
+                    stopAudioVisualizer(); // Stop visualizer
 
                     if (finalTranscription.textContent.trim().length > 0) {
                         buttonSummarizeTranscription.disabled = false;
@@ -560,18 +606,18 @@
 
                 recognition.onerror = function(event) {
                     isRecording = false;
-                    buttonToggleRecording.textContent = 'Iniciar Gravação';
+                    buttonToggleRecording.textContent = 'Start Recording';
                     buttonToggleRecording.classList.remove('recording');
                     recordingDot.style.display = 'none';
-                    console.error('Erro no reconhecimento de fala:', event.error);
+                    console.error('Speech recognition error:', event.error);
                     if (event.error === 'not-allowed') {
-                        statusText.textContent = 'Permissão do microfone negada. Por favor, permita o acesso ao microfone nas configurações do navegador.';
+                        statusText.textContent = 'Microphone permission denied. Please allow microphone access in browser settings.';
                     } else if (event.error === 'no-speech') {
-                        statusText.textContent = 'Nenhuma fala detectada. Tente novamente.';
+                        statusText.textContent = 'No speech detected. Try again.';
                     } else {
-                        statusText.textContent = `Erro: ${event.error}. Tente novamente.`;
+                        statusText.textContent = `Error: ${event.error}. Try again.`;
                     }
-                    // Desabilita botões de IA e exportação em caso de erro
+                    // Disable AI and export buttons on error
                     buttonSummarizeTranscription.disabled = true;
                     buttonTranslateTranscription.disabled = true;
                     buttonExtractTopics.disabled = true;
@@ -583,24 +629,24 @@
                     buttonCopyTranscription.disabled = true;
                     buttonSaveSession.disabled = true;
                     buttonClearAILogic.disabled = true;
-                    stopAudioVisualizer(); // Para o visualizador em caso de erro
+                    stopAudioVisualizer(); // Stop visualizer on error
                 };
             }
 
-            // Inicializa o reconhecimento pela primeira vez
+            // Initialize recognition for the first time
             initializeRecognition();
 
-            // Event listener para mudança de idioma
+            // Event listener for language change
             languageSelect.addEventListener('change', function() {
                 if (isRecording) {
                     recognition.stop();
                 }
                 initializeRecognition();
                 clearAllOutputs();
-                statusText.textContent = `Idioma de transcrição alterado para ${languageSelect.options[languageSelect.selectedIndex].text}.`;
+                statusText.textContent = `Transcription language changed to ${languageSelect.options[languageSelect.selectedIndex].text}.`;
             });
 
-            // Função para chamar a API Gemini para processamento de texto
+            // Function to call Gemini API for text processing
             async function callGeminiApiForTextProcessing(prompt, outputElement, loadingSpinner) {
                 loadingSpinner.style.display = 'inline-block';
                 outputElement.querySelector('.llm-output-text').textContent = '';
@@ -610,7 +656,10 @@
                 chatHistory.push({ role: "user", parts: [{ text: prompt }] });
 
                 const payload = { contents: chatHistory };
-                const apiKey = "";
+                // **** COLOQUE AQUI SUA CHAVE DE API GEMINI ****
+                // Você pode obter uma chave em https://aistudio.google.com/
+                const apiKey = "AIzaSyCnPYQjh4Q1qpkOVnCoPflKck1cSf7hHfc"; // <-- SUA CHAVE DE API FOI INSERIDA AQUI
+
                 const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
                 try {
@@ -622,7 +671,7 @@
 
                     if (!response.ok) {
                         const errorData = await response.json();
-                        throw new Error(`Erro na API: ${response.status} - ${errorData.error.message || 'Erro desconhecido'}`);
+                        throw new Error(`API Error: ${response.status} - ${errorData.error.message || 'Unknown error'}`);
                     }
 
                     const result = await response.json();
@@ -638,34 +687,34 @@
                         }
 
                     } else {
-                        outputElement.querySelector('.llm-output-text').textContent = 'Não foi possível gerar uma resposta. Tente novamente.';
+                        outputElement.querySelector('.llm-output-text').textContent = 'Could not generate a response. Please try again.';
                     }
                 } catch (error) {
-                    console.error('Erro ao chamar a API Gemini:', error);
-                    outputElement.querySelector('.llm-output-text').textContent = `Erro: ${error.message}. Verifique o console para mais detalhes.`;
+                    console.error('Error calling Gemini API:', error);
+                    outputElement.querySelector('.llm-output-text').textContent = `Error: ${error.message}. Check console for more details.`;
                 } finally {
                     loadingSpinner.style.display = 'none';
                 }
             }
 
-            // Função para gerar e exportar a ata de reunião
+            // Function to generate and export meeting minutes
             async function generateMeetingMinutesAndExport() {
                 const transcription = finalTranscription.textContent.trim();
                 const topics = topicsOutput.querySelector('.llm-output-text').textContent.trim();
 
                 if (transcription === '') {
-                    alert('Nenhuma transcrição final disponível para gerar a ata.');
+                    alert('No final transcription available to generate meeting minutes.');
                     return;
                 }
                 if (topics === '') {
-                    alert('Por favor, extraia os tópicos principais antes de gerar a ata.');
+                    alert('Please extract main topics before generating meeting minutes.');
                     return;
                 }
 
                 const currentDate = new Date().toLocaleDateString('pt-BR');
                 const currentTime = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
 
-                const prompt = `Formate o seguinte texto e tópicos em uma ata de reunião. Inclua um título "Ata de Reunião", a data e hora atual (${currentDate} ${currentTime}), uma seção para "Tópicos Abordados" (usando os tópicos fornecidos) e uma seção para "Transcrição Completa". Use um formato claro e profissional para a ata.\n\nTranscrição:\n${transcription}\n\nTópicos Principais:\n${topics}`;
+                const prompt = `Format the following text and topics into meeting minutes. Include a title "Meeting Minutes", the current date and time (${currentDate} ${currentTime}), a section for "Topics Covered" (using the provided topics), and a section for "Full Transcription". Use a clear and professional format for the minutes.\n\nTranscription:\n${transcription}\n\nMain Topics:\n${topics}`;
 
                 meetingMinutesPreview.style.display = 'none';
                 meetingMinutesPreview.querySelector('.llm-output-text').textContent = '';
@@ -679,7 +728,7 @@
                         <html>
                         <head>
                             <meta charset="utf-8">
-                            <title>Ata de Reunião</title>
+                            <title>Meeting Minutes</title>
                             <style>
                                 body { font-family: 'Times New Roman', Times, serif; margin: 1in; }
                                 h1 { text-align: center; font-size: 24pt; margin-bottom: 20pt; }
@@ -699,19 +748,19 @@
 
                     const a = document.createElement('a');
                     a.href = url;
-                    a.download = `Ata_Reuniao_${currentDate.replace(/\//g, '-')}_${currentTime.replace(/:/g, '-')}.doc`;
+                    a.download = `Meeting_Minutes_${currentDate.replace(/\//g, '-')}_${currentTime.replace(/:/g, '-')}.doc`;
                     document.body.appendChild(a);
                     a.click();
                     document.body.removeChild(a);
                     URL.revokeObjectURL(url);
 
-                    alert('Ata de reunião gerada e download iniciado!');
+                    alert('Meeting minutes generated and download started!');
                 } else {
-                    alert('Não foi possível gerar o conteúdo da ata de reunião.');
+                    alert('Could not generate meeting minutes content.');
                 }
             }
 
-            // Função para exportar texto para TXT
+            // Function to export text to TXT
             function exportTextToTxt(filename, content) {
                 const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
                 const url = URL.createObjectURL(blob);
@@ -724,14 +773,14 @@
                 URL.revokeObjectURL(url);
             }
 
-            // Função para copiar texto para a área de transferência
+            // Function to copy text to clipboard
             function copyToClipboard(text) {
                 if (navigator.clipboard && navigator.clipboard.writeText) {
                     navigator.clipboard.writeText(text)
-                        .then(() => alert('Copiado para a área de transferência!'))
+                        .then(() => alert('Copied to clipboard!'))
                         .catch(err => {
-                            console.error('Erro ao copiar:', err);
-                            alert('Não foi possível copiar. Tente manualmente.');
+                            console.error('Error copying:', err);
+                            alert('Could not copy. Try manually.');
                         });
                 } else {
                     const textarea = document.createElement('textarea');
@@ -740,24 +789,24 @@
                     textarea.select();
                     try {
                         document.execCommand('copy');
-                        alert('Copiado para a área de transferência!');
+                        alert('Copied to clipboard!');
                     } catch (err) {
-                        console.error('Erro ao copiar (execCommand):', err);
-                        alert('Não foi possível copiar. Tente manualmente.');
+                        console.error('Error copying (execCommand):', err);
+                        alert('Could not copy. Try manually.');
                     }
                     document.body.removeChild(textarea);
                 }
             }
 
-            // Função para atualizar a contagem de palavras e caracteres
+            // Function to update word and character count
             function updateWordCharCount() {
                 const text = finalTranscription.textContent.trim();
                 const wordCount = text.split(/\s+/).filter(word => word.length > 0).length;
                 const charCount = text.length;
-                wordCharCount.textContent = `Palavras: ${wordCount} | Caracteres: ${charCount}`;
+                wordCharCount.textContent = `Words: ${wordCount} | Characters: ${charCount}`;
             }
 
-            // Função para limpar apenas as saídas de IA
+            // Function to clear only AI outputs
             function clearAILogicOutputs() {
                 summaryOutput.querySelector('.llm-output-text').textContent = '';
                 summaryOutput.style.display = 'none';
@@ -774,7 +823,7 @@
                 meetingMinutesPreview.querySelector('.llm-output-text').textContent = '';
                 meetingMinutesPreview.style.display = 'none';
 
-                // Desabilitar botões de IA e exportação de ata
+                // Disable AI and meeting minutes export buttons
                 buttonSummarizeTranscription.disabled = true;
                 buttonTranslateTranscription.disabled = true;
                 buttonExtractTopics.disabled = true;
@@ -785,7 +834,7 @@
                 buttonClearAILogic.disabled = true;
             }
 
-            // Função para limpar todos os campos e saídas
+            // Function to clear all fields and outputs
             function clearAllOutputs() {
                 partialTranscription.textContent = '';
                 finalTranscription.textContent = '';
@@ -793,14 +842,14 @@
                 statusText.textContent = '';
                 recordingDot.style.display = 'none';
                 
-                clearAILogicOutputs(); // Chama a função para limpar as saídas de IA
+                clearAILogicOutputs(); // Call function to clear AI outputs
 
                 buttonExportTxt.disabled = true;
                 buttonCopyTranscription.disabled = true;
                 buttonSaveSession.disabled = true;
             }
 
-            // Função para salvar a sessão no localStorage
+            // Function to save session to localStorage
             function saveSession() {
                 const sessionData = {
                     finalTranscription: finalTranscription.textContent,
@@ -812,15 +861,15 @@
                     keywordsOutput: keywordsOutput.querySelector('.llm-output-text').textContent
                 };
                 localStorage.setItem('transcriptionSession', JSON.stringify(sessionData));
-                alert('Sessão salva com sucesso!');
+                alert('Session saved successfully!');
             }
 
-            // Função para carregar a sessão do localStorage
+            // Function to load session from localStorage
             function loadSession() {
                 const savedData = localStorage.getItem('transcriptionSession');
                 if (savedData) {
                     const sessionData = JSON.parse(savedData);
-                    clearAllOutputs(); // Limpa antes de carregar
+                    clearAllOutputs(); // Clear before loading
 
                     finalTranscription.textContent = sessionData.finalTranscription || '';
                     summaryOutput.querySelector('.llm-output-text').textContent = sessionData.summaryOutput || '';
@@ -830,7 +879,7 @@
                     actionItemsOutput.querySelector('.llm-output-text').textContent = sessionData.actionItemsOutput || '';
                     keywordsOutput.querySelector('.llm-output-text').textContent = sessionData.keywordsOutput || '';
 
-                    // Exibir saídas se houver conteúdo
+                    // Display outputs if content exists
                     if (summaryOutput.querySelector('.llm-output-text').textContent) summaryOutput.style.display = 'block';
                     if (translationOutput.querySelector('.llm-output-text').textContent) translationOutput.style.display = 'block';
                     if (topicsOutput.querySelector('.llm-output-text').textContent) topicsOutput.style.display = 'block';
@@ -838,7 +887,7 @@
                     if (actionItemsOutput.querySelector('.llm-output-text').textContent) actionItemsOutput.style.display = 'block';
                     if (keywordsOutput.querySelector('.llm-output-text').textContent) keywordsOutput.style.display = 'block';
 
-                    // Reabilitar botões com base no conteúdo carregado
+                    // Re-enable buttons based on loaded content
                     if (finalTranscription.textContent.trim().length > 0) {
                         buttonSummarizeTranscription.disabled = false;
                         buttonTranslateTranscription.disabled = false;
@@ -855,94 +904,94 @@
                         }
                     }
                     updateWordCharCount();
-                    alert('Sessão carregada com sucesso!');
+                    alert('Session loaded successfully!');
                 } else {
-                    alert('Nenhuma sessão salva encontrada.');
+                    alert('No saved session found.');
                 }
             }
 
-            // Event listener para o botão de iniciar/parar gravação
+            // Event listener for toggle recording button
             buttonToggleRecording.addEventListener('click', function() {
                 if (isRecording) {
                     recognition.stop();
                 } else {
-                    statusText.textContent = 'Iniciando gravação...';
+                    statusText.textContent = 'Starting recording...';
                     recognition.start();
                 }
             });
 
-            // Event listeners para os botões de IA
+            // Event listeners for AI buttons
             buttonSummarizeTranscription.addEventListener('click', function() {
                 const textToSummarize = finalTranscription.textContent.trim();
-                if (textToSummarize === '') { alert('Nenhuma transcrição final disponível para resumir.'); return; }
-                const prompt = `Resuma o seguinte texto de forma concisa e clara:\n\n${textToSummarize}`;
+                if (textToSummarize === '') { alert('No final transcription available to summarize.'); return; }
+                const prompt = `Summarize the following text concisely and clearly:\n\n${textToSummarize}`;
                 callGeminiApiForTextProcessing(prompt, summaryOutput, summaryOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonTranslateTranscription.addEventListener('click', function() {
                 const textToTranslate = finalTranscription.textContent.trim();
-                if (textToTranslate === '') { alert('Nenhuma transcrição final disponível para traduzir.'); return; }
-                const prompt = `Traduza o seguinte texto do português para o inglês:\n\n${textToTranslate}`;
+                if (textToTranslate === '') { alert('No final transcription available to translate.'); return; }
+                const prompt = `Translate the following text from Portuguese to English:\n\n${textToTranslate}`;
                 callGeminiApiForTextProcessing(prompt, translationOutput, translationOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractTopics.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair tópicos.'); return; }
-                const prompt = `Analise o seguinte texto e liste os 3 a 5 principais tópicos ou assuntos abordados, separando-os por marcadores:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('No final transcription available to extract topics.'); return; }
+                const prompt = `Analyze the following text and list the 3 to 5 main topics or subjects covered, separated by bullet points:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, topicsOutput, topicsOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonSentimentAnalysis.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para análise de sentimento.'); return; }
-                const prompt = `Analise o sentimento geral do seguinte texto e classifique-o como Positivo, Negativo ou Neutro. Explique brevemente o porquê:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('No final transcription available for sentiment analysis.'); return; }
+                const prompt = `Analyze the overall sentiment of the following text and classify it as Positive, Negative, or Neutral. Briefly explain why:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, sentimentOutput, sentimentOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractActionItems.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair itens de ação.'); return; }
-                const prompt = `Do seguinte texto, extraia todos os itens de ação, tarefas ou próximos passos que foram mencionados. Liste-os com marcadores:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('No final transcription available to extract action items.'); return; }
+                const prompt = `From the following text, extract all action items, tasks, or next steps that were mentioned. List them with bullet points:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, actionItemsOutput, actionItemsOutput.querySelector('.llm-loading-spinner'));
             });
 
             buttonExtractKeywords.addEventListener('click', function() {
                 const textToAnalyze = finalTranscription.textContent.trim();
-                if (textToAnalyze === '') { alert('Nenhuma transcrição final disponível para extrair palavras-chave.'); return; }
-                const prompt = `Liste as 5 a 10 palavras-chave ou frases mais relevantes do seguinte texto:\n\n${textToAnalyze}`;
+                if (textToAnalyze === '') { alert('No final transcription available to extract keywords.'); return; }
+                const prompt = `List the 5 to 10 most relevant keywords or phrases from the following text:\n\n${textToAnalyze}`;
                 callGeminiApiForTextProcessing(prompt, keywordsOutput, keywordsOutput.querySelector('.llm-loading-spinner'));
             });
 
-            // Event listener para o botão Gerar e Exportar Ata de Reunião
+            // Event listener for Generate and Export Meeting Minutes button
             buttonExportMeetingMinutes.addEventListener('click', generateMeetingMinutesAndExport);
 
-            // Event listener para o botão Exportar Transcrição (TXT)
+            // Event listener for Export Transcription (TXT) button
             buttonExportTxt.addEventListener('click', function() {
                 const textToExport = finalTranscription.textContent.trim();
-                if (textToExport === '') { alert('Nenhuma transcrição final para exportar.'); return; }
-                const filename = `transcricao_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.txt`;
+                if (textToExport === '') { alert('No final transcription to export.'); return; }
+                const filename = `transcription_${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.txt`;
                 exportTextToTxt(filename, textToExport);
-                alert('Transcrição exportada como TXT!');
+                alert('Transcription exported as TXT!');
             });
 
-            // Event listener para o botão Copiar Transcrição Final
+            // Event listener for Copy Final Transcription button
             buttonCopyTranscription.addEventListener('click', function() {
                 const textToCopy = finalTranscription.textContent.trim();
-                if (textToCopy === '') { alert('Nenhuma transcrição final para copiar.'); return; }
+                if (textToCopy === '') { alert('No final transcription to copy.'); return; }
                 copyToClipboard(textToCopy);
             });
 
-            // Event listener para o botão Salvar Sessão
+            // Event listener for Save Session button
             buttonSaveSession.addEventListener('click', saveSession);
 
-            // Event listener para o botão Carregar Sessão
+            // Event listener for Load Session button
             buttonLoadSession.addEventListener('click', loadSession);
 
-            // Novo Event listener para o botão Limpar Saídas de IA
+            // New Event listener for Clear AI Outputs button
             buttonClearAILogic.addEventListener('click', clearAILogicOutputs);
 
-            // Event listener para o botão Limpar Tudo
+            // Event listener for Clear All button
             buttonClearAll.addEventListener('click', clearAllOutputs);
         });
     </script>
